@@ -1,0 +1,590 @@
+/* ==================================================
+   TEMA CORINTHIANS
+   Cores principais do site
+================================================== */
+
+:root{
+    --preto: #0A0A0A;
+    --dourado: #D4AF37;
+    --branco: #FFFFFF;
+}
+
+/* ==================================================
+   CONFIGURAÇÕES GERAIS
+================================================== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: var(--preto);
+    color: var(--branco);
+    font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* ==================================================
+   MENU DE NAVEGAÇÃO
+================================================== */
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    z-index: 1000;
+
+    background: rgba(0,0,0,.9);
+    backdrop-filter: blur(10px);
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+    padding: 20px;
+}
+
+nav a{
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: .3s;
+}
+
+nav a:hover{
+    color: var(--dourado);
+}
+
+/* ==================================================
+   HERO SECTION
+================================================== */
+
+.hero{
+    height: 100vh;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.7),
+        rgba(0,0,0,.9)
+    ),
+    url("neo.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.hero h1{
+    font-size: 6rem;
+    color: var(--branco);
+}
+
+.hero p{
+    font-size: 2rem;
+    color: var(--dourado);
+}
+
+.hero button{
+    margin-top: 20px;
+}
+
+/* ==================================================
+   SEÇÕES GERAIS
+================================================== */
+
+section{
+    padding: 120px 10%;
+}
+
+h2{
+    color: var(--dourado);
+    font-size: 3rem;
+
+    margin-bottom: 20px;
+}
+
+/* ==================================================
+   BOTÕES
+================================================== */
+
+button{
+    background: var(--dourado);
+
+    border: none;
+
+    padding: 15px 30px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: .3s;
+}
+
+button:hover{
+    opacity: .85;
+}
+
+/* ==================================================
+   FORMULÁRIOS
+================================================== */
+
+input,
+select,
+textarea{
+    width: 100%;
+
+    padding: 15px;
+
+    margin-bottom: 15px;
+
+    border: none;
+}
+
+/* ==================================================
+   ESTATÍSTICAS / CONTADORES
+================================================== */
+
+.stats-container{
+    display: grid;
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 25px;
+
+    margin-top: 40px;
+}
+
+.stat-card{
+    background: rgba(255,255,255,0.05);
+
+    border: 2px solid var(--dourado);
+
+    border-radius: 15px;
+
+    padding: 35px;
+
+    text-align: center;
+
+    transition: .3s;
+}
+
+.stat-card:hover{
+    transform: translateY(-10px);
+
+    box-shadow:
+    0 0 20px rgba(212,175,55,.4);
+}
+
+.stat-card h3{
+    color: var(--dourado);
+
+    font-size: 4rem;
+
+    margin-bottom: 10px;
+}
+
+.stat-card span{
+    color: var(--dourado);
+
+    font-size: 2rem;
+
+    font-weight: bold;
+}
+
+.stat-card p{
+    color: var(--branco);
+
+    font-size: 1.2rem;
+
+    margin-top: 10px;
+}
+
+/* ==================================================
+   SEÇÃO DOS ÍDOLOS
+================================================== */
+
+.idolos-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 30px;
+
+    margin-top: 50px;
+}
+
+/* Card individual do ídolo */
+
+.idolo-card{
+    width: 320px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: rgba(255,255,255,0.03);
+
+    border: 1px solid rgba(212,175,55,.4);
+
+    border-radius: 4px;
+
+    overflow: hidden;
+
+    transition: .3s;
+}
+
+.idolo-card:hover{
+    transform: translateY(-8px);
+
+    border-color: var(--dourado);
+
+    box-shadow:
+    0 0 20px rgba(212,175,55,.15);
+}
+
+/* Imagem vertical do jogador */
+
+.idolo-card img{
+    width: 100%;
+    height: 420px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+/* ==================================================
+   SEÇÃO HISTÓRIA
+================================================== */
+
+.historia-container{
+    display: flex;
+    align-items: center;
+
+    gap: 80px;
+
+    max-width: 1400px;
+
+    margin: auto;
+}
+
+/* Escudo do Corinthians */
+
+.historia-logo{
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+}
+
+.historia-logo img{
+    width: 100%;
+    max-width: 420px;
+
+    filter:
+    drop-shadow(
+    0 0 20px rgba(212,175,55,.15)
+    );
+}
+
+/* Conteúdo da história */
+
+.historia-content{
+    flex: 2;
+}
+
+/* Texto "Desde 1910" */
+
+.desde{
+    color: var(--dourado);
+
+    font-size: 1rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: 3px;
+}
+
+/* Título principal */
+
+.historia-content h2{
+    color: var(--branco);
+
+    font-size: 4rem;
+
+    line-height: 1;
+
+    margin: 15px 0 25px;
+}
+
+/* Parágrafo */
+
+.historia-content p{
+    color: #d0d0d0;
+
+    font-size: 1.1rem;
+
+    line-height: 1.8;
+
+    margin-bottom: 40px;
+}
+
+/* ==================================================
+   MARCOS HISTÓRICOS
+================================================== */
+
+.marcos h3{
+    color: var(--dourado);
+
+    margin-bottom: 20px;
+}
+
+.marco{
+    color: #e0e0e0;
+
+    border-left: 2px solid var(--dourado);
+
+    padding-left: 15px;
+
+    margin-bottom: 18px;
+}
+
+.marco strong{
+    display: block;
+
+    color: var(--dourado);
+
+    margin-bottom: 4px;
+}
+
+/* ==================================================
+   RESPONSIVIDADE
+================================================== */
+
+@media (max-width: 900px){
+
+    /* História em coluna */
+
+    .historia-container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Linha dos marcos */
+
+    .marco{
+        border-left: none;
+        border-top: 2px solid var(--dourado);
+
+        padding-left: 0;
+        padding-top: 10px;
+    }
+
+    /* Título menor */
+
+    .historia-content h2{
+        font-size: 3rem;
+    }
+
+    /* Hero responsivo */
+
+    .hero h1{
+        font-size: 4rem;
+    }
+
+    .hero p{
+        font-size: 1.5rem;
+    }
+}
+
+/* =====================================
+   SEÇÃO FIEL TORCEDOR
+===================================== */
+
+.arena-container{
+    max-width:1200px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+
+    align-items:center;
+}
+
+.arena-subtitulo{
+    color:#D4AF37;
+    text-transform:uppercase;
+    letter-spacing:3px;
+}
+
+.arena-texto h2{
+    font-size:4rem;
+    line-height:1;
+    margin:15px 0 25px;
+}
+
+.arena-texto p{
+    color:#d0d0d0;
+    line-height:1.8;
+    font-size:1.1rem;
+}
+
+.arena-formulario{
+    background:rgba(255,255,255,0.03);
+
+    border:1px solid rgba(212,175,55,.3);
+
+    padding:35px;
+}
+
+.arena-formulario label{
+    display:block;
+
+    margin-bottom:8px;
+
+    color:#D4AF37;
+
+    font-weight:600;
+}
+
+.arena-formulario input,
+.arena-formulario select,
+.arena-formulario textarea{
+    width:100%;
+
+    padding:14px;
+
+    margin-bottom:20px;
+
+    background:#111;
+
+    color:white;
+
+    border:1px solid rgba(212,175,55,.2);
+}
+
+.arena-formulario input:focus,
+.arena-formulario select:focus,
+.arena-formulario textarea:focus{
+    outline:none;
+
+    border-color:#D4AF37;
+}
+
+.arena-formulario button{
+    width:100%;
+
+    background:#D4AF37;
+
+    color:black;
+
+    font-weight:bold;
+
+    padding:15px;
+
+    transition:.3s;
+}
+
+.arena-formulario button:hover{
+    opacity:.85;
+}
+
+@media(max-width:900px){
+
+    .arena-container{
+        grid-template-columns:1fr;
+    }
+
+    .arena-texto{
+        text-align:center;
+    }
+
+    .arena-texto h2{
+        font-size:3rem;
+    }
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer{
+    width:100%;
+
+    background:#050505;
+
+    border-top:1px solid rgba(212,175,55,.3);
+
+    margin-top:80px;
+}
+
+.footer-container{
+    width:100%;
+
+    padding:60px 5%;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:50px;
+}
+
+.footer-col h3{
+    color:#D4AF37;
+
+    margin-bottom:20px;
+}
+
+.footer-col p{
+    color:#bdbdbd;
+
+    line-height:1.8;
+}
+
+.footer-col ul{
+    list-style:none;
+}
+
+.footer-col ul li{
+    margin-bottom:12px;
+}
+
+.footer-col ul li a{
+    color:#bdbdbd;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer-col ul li a:hover{
+    color:#D4AF37;
+}
+
+.footer-bottom{
+    width:100%;
+
+    text-align:center;
+
+    padding:20px;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    color:#888;
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arena</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header>
+<nav>
+<a href="index.html">Início</a>
+<a href="historia.html">História</a>
+<a href="idolos.html">Ídolos</a>
+<a href="titulos.html">Títulos</a>
+<a href="arena.html">Arena</a>
+</nav>
+</header>
+
+<section id="arena" class="reveal">
+
+    <div class="arena-container">
+
+        <div class="arena-texto">
+
+            <span class="arena-subtitulo">
+                O Chamado
+            </span>
+
+            <h2>
+                FIEL<br>
+                TORCEDOR
+            </h2>
+
+            <p>
+                Faça parte da família corintiana.
+                Preencha o formulário abaixo e junte-se
+                aos milhões de apaixonados pelo Timão.
+            </p>
+
+        </div>
+
+        <div class="arena-formulario">
+
+            <form onsubmit="enviarFormulario(event)">
+
+                <!-- Nome -->
+
+                <label>
+                    Nome Completo *
+                </label>
+
+                <input
+                    type="text"
+                    placeholder="Seu nome completo"
+                    required
+                >
+
+                <!-- CPF -->
+
+                <label>
+                    CPF *
+                </label>
+
+                <input
+                    type="text"
+                    placeholder="000.000.000-00"
+                    required
+                >
+
+                <!-- Email -->
+
+                <label>
+                    E-mail *
+                </label>
+
+                <input
+                    type="email"
+                    placeholder="seu@email.com"
+                    required
+                >
+
+                <!-- Setor -->
+
+                <label>
+                    Setor Preferido na Arena *
+                </label>
+
+                <select required>
+
+                    <option value="">
+                        Selecione seu setor favorito
+                    </option>
+
+                    <option>
+                        Norte (Fiel Torcedor)
+                    </option>
+
+                    <option>
+                        Sul
+                    </option>
+
+                    <option>
+                        Leste
+                    </option>
+
+                    <option>
+                        Oeste
+                    </option>
+
+                </select>
+
+                <!-- História -->
+
+                <label>
+                    Por que você é louco pelo Timão? *
+                </label>
+
+                <textarea
+                    rows="5"
+                    placeholder="Conte sua história com o Corinthians..."
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Enviar Cadastro
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+<footer>
+
+    <div class="footer-container">
+
+        <!-- Sobre -->
+
+        <div class="footer-col">
+
+            <h3>SCCP</h3>
+
+            <p>
+                Sport Club Corinthians Paulista.
+                Fundado em 1º de setembro de 1910.
+                O time do povo, a paixão de milhões.
+            </p>
+
+        </div>
+
+        <!-- Navegação -->
+
+        <div class="footer-col">
+
+            <h3>Navegação</h3>
+
+            <ul>
+
+                <li><a href="index.html">Início</a></li>
+
+                <li><a href="idolos.html">Ídolos</a></li>
+
+                <li><a href="titulos.html">Títulos</a></li>
+
+                <li><a href="historia.html">História</a></li>
+
+                <li><a href="arena.html">Fiel Torcedor</a></li>
+
+            </ul>
+
+        </div>
+
+        <!-- Informações -->
+
+        <div class="footer-col">
+
+            <h3>Informações</h3>
+
+            <p>Neo Química Arena — Itaquera, SP</p>
+
+            <p>Fundação: 01/09/1910</p>
+
+            <p>Cores: Preto e Branco</p>
+
+            <p>Mascote: Mosqueteiro</p>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        © 2026 Projeto Acadêmico — Site sobre o Corinthians.
+
+    </div>
+
+</footer>
+
+</body>
+</html>
